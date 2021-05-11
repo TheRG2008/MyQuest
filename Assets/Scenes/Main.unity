@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 1
+  m_Fog: 0
   m_FogColor: {r: 0.2830189, g: 0.26833394, b: 0.26833394, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.03
@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.91193485, g: 0.91980183, b: 0.9339623, a: 1}
   m_AmbientEquatorColor: {r: 0, g: 0, b: 0, a: 1}
   m_AmbientGroundColor: {r: 0.13137256, g: 0.13235295, b: 0.25, a: 1}
-  m_AmbientIntensity: 0.1
+  m_AmbientIntensity: 0.29
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: 51b74d7bad397457d883c5940f7664d8, type: 2}
@@ -33,7 +33,7 @@ RenderSettings:
   m_HaloTexture: {fileID: 0}
   m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
   m_DefaultReflectionMode: 0
-  m_DefaultReflectionResolution: 256
+  m_DefaultReflectionResolution: 512
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 8900000, guid: 34a763168147f4182a21b9fd004d67de, type: 3}
@@ -4715,7 +4715,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.18035777, g: 0.19456212, b: 0.1981132, a: 1}
+  m_Color: {r: 0.6019491, g: 0.6993717, b: 0.764151, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -4725,7 +4725,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.27
     m_Bias: 0
     m_NormalBias: 0.4
     m_NearPlane: 0.2
@@ -4761,7 +4761,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: NaN, y: 0, z: 0, w: 3.5303128e-26}
+  m_BoundingSphereOverride: {x: 0, y: 5.1545e-41, z: 0, w: NaN}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -14244,7 +14244,7 @@ PrefabInstance:
     - target: {fileID: 3237954362236405153, guid: dda8cee20de5c40469164408f2805786,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.36
+      value: -17.45
       objectReference: {fileID: 0}
     - target: {fileID: 3237954362236405153, guid: dda8cee20de5c40469164408f2805786,
         type: 3}

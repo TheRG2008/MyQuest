@@ -238,4 +238,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _button: {fileID: 0}
-  _keySound: {fileID: 0}
+  _keySound: {fileID: 6660715039452876756, guid: 4a3be28150879fb48b0b766f47ccaeb8,
+    type: 3}
+  _door: {fileID: 0}
