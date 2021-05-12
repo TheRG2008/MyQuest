@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Key : MonoBehaviour
 {
-    [SerializeField] private GameObject _button;
+    
     [SerializeField] private GameObject _keySound;
     [SerializeField] private GameObject _door;
    
@@ -29,8 +29,7 @@ public class Key : MonoBehaviour
 
     void EnterAnimation ()
     {
-        _keySound.GetComponent<AudioSource>().enabled = true;
-        _button.SetActive(true);
+        _keySound.GetComponent<AudioSource>().enabled = true;        
         gameObject.SetActive(false);
         Invoke("StopKeySound", 3);
     }
