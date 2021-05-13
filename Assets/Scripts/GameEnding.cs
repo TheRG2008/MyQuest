@@ -1,18 +1,27 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 public class GameEnding : MonoBehaviour
 {
     [SerializeField] private GameObject _canvas;
     [SerializeField] private GameObject _player;
+    private Animator _anim;    
+    public UnityEvent PushEvent;
 
+    private void Awake()
+    {
+        _anim = GetComponent<Animator>();
+    }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Enemy")
+        if (other.tag == "Player")
         {
-            Invoke ("PlayerIsDead",0.2f);
+            _anim.SetBool("walk", false);
+            _anim.SetBool("atack", true);
+            PushEvent.Invoke();
+            Invoke ("PlayerIsDead",1f);
         }
 
         

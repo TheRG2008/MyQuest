@@ -25,7 +25,7 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-        if (_navMesh.remainingDistance <= _navMesh.stoppingDistance)
+        if (_navMesh.remainingDistance <= _navMesh.stoppingDistance + 1)
         {
             _CurrentWaypointIndex = (_CurrentWaypointIndex + 1) % _waypoints.Length;
             _navMesh.SetDestination(_waypoints[_CurrentWaypointIndex].position);
