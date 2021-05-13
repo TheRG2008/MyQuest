@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -18,8 +17,7 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
-        _anim.SetBool("down", false);
-
+           
         _anim.SetBool("walk", true);
         _navMesh.SetDestination(_waypoints[0].position);
 

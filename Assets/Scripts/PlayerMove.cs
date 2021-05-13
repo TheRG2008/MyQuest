@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
@@ -32,15 +30,21 @@ public class PlayerMove : MonoBehaviour
     private void Update()
     {
         Walk();
-        if (_xMove != 0 || _zMove != 0)
+        if (_xMove != 0 || _zMove < 0)
+        {
+            _anim.SetBool("backwalk", true);
+            
+        }
+        else if (_xMove != 0 || _zMove > 0)
         {
             _anim.SetBool("walk", true);
-            _sourse.Play();
+            
         }
         else
         {
             _anim.SetBool("walk", false);
-            _sourse.Stop();
+            _anim.SetBool("backwalk", false);
+
         }
         MouseLook();        
     }
