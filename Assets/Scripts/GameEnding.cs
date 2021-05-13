@@ -28,7 +28,7 @@ public class GameEnding : MonoBehaviour
 
     private void ReloadScene ()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 0);
         CancelInvoke();
     }
 

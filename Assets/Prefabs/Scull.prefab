@@ -4849,7 +4849,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40af88a3ef5fa34409986af7999caba1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _particalSystem: {fileID: 0}
+  _particalSystem: {fileID: 5385868936992966027}
   IsActive: 0
 --- !u!65 &5337467359111159614
 BoxCollider:

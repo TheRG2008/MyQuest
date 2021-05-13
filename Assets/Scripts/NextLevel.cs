@@ -9,7 +9,7 @@ public class NextLevel : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }
