@@ -4851,6 +4851,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particalSystem: {fileID: 5385868936992966027}
+  _scullCanvas: {fileID: 0}
   IsActive: 0
   ExitEvent:
     m_PersistentCalls:
@@ -4891,8 +4892,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.28536, y: 2.0668395, z: 2.3971386}
-  m_Center: {x: 0.14268932, y: -0.67658246, z: 0.19371016}
+  m_Size: {x: 1.8781854, y: 2.0668395, z: 1.7748739}
+  m_Center: {x: 0.10028464, y: -0.67658246, z: 0.12165155}
 --- !u!54 &8874765016026160634
 Rigidbody:
   m_ObjectHideFlags: 0

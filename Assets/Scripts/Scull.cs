@@ -4,6 +4,7 @@ using UnityEngine.Events;
 public class Scull : MonoBehaviour
 {
     [SerializeField] private GameObject _particalSystem;
+    [SerializeField] private GameObject _scullCanvas;
     public bool IsActive = false;
     public UnityEvent ExitEvent;
     public UnityEvent EnterEvent;
@@ -16,6 +17,7 @@ public class Scull : MonoBehaviour
             {
                 _particalSystem.SetActive(true);
                 gameObject.GetComponentInParent<AudioSource>().enabled = true;
+                _scullCanvas.SetActive(true);
                 IsActive = true;
             }            
         }
