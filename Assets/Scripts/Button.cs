@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class TestButton : MonoBehaviour
+public class Button : MonoBehaviour
 {    
     public UnityEvent PushEvent;
     
