@@ -1,10 +1,13 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Portal : MonoBehaviour
 {
     //Создаем массив объектов которые будут учавствовать в активации портала
     [SerializeField] private GameObject[] _sculs;
     private int _count = 0;
+    public UnityEvent ExitEvent;
+    public UnityEvent EnterEvent;
 
     private void OnTriggerStay(Collider other)
     {
@@ -30,6 +33,22 @@ public class Portal : MonoBehaviour
                 _count = 0;
             }
         }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            ExitEvent.Invoke();
+        }
+
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            EnterEvent.Invoke();
+        }
+
     }
 
 }
