@@ -1,6 +1,6 @@
 ﻿
 using UnityEngine;
-
+// А нужен ли этот скрипт?
 public class FastEnemyActive : MonoBehaviour
 {
     [SerializeField] private GameObject _fastEnemy; 
