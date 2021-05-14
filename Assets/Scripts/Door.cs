@@ -7,12 +7,11 @@ public class Door : MonoBehaviour
     public bool IsOpen;    
     
     
-
+// Проверяет взял ли Player ключ от этой двери (IsOpen) если да то дверь открывается.
     private void OnTriggerStay(Collider other)
     {
         if (other.tag == "Player")
-        {
-      
+        {      
             if (IsOpen == true)
             {               
                 if (Input.GetKey(KeyCode.F))
@@ -23,8 +22,7 @@ public class Door : MonoBehaviour
                 }
 
             }
-        }
-       
+        }       
 
     }
 }
