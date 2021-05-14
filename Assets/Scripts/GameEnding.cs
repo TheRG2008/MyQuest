@@ -9,11 +9,13 @@ public class GameEnding : MonoBehaviour
     [SerializeField] private GameObject _player;
     private Animator _anim;    
     public UnityEvent PushEvent;
-
+    
     private void Awake()
     {
         _anim = GetComponent<Animator>();
     }
+    
+    //Проверяем попал ли в коллайдер Player, если да то => анимация => события => логика смерти 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
@@ -22,10 +24,9 @@ public class GameEnding : MonoBehaviour
             _anim.SetBool("atack", true);
             PushEvent.Invoke();
             Invoke ("PlayerIsDead",1f);
-        }
-
-        
+        }        
     }
+    
     private void PlayerIsDead ()
     {
         _canvas.SetActive(true);
@@ -37,9 +38,8 @@ public class GameEnding : MonoBehaviour
 
     private void ReloadScene ()
     {
+        //Метод для перезагрузки текущей сцены
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 0);
         CancelInvoke();
     }
-
-
 }
