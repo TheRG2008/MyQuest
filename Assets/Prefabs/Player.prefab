@@ -181,7 +181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 838956f78e8048549a9423b227bd79c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 1
+  _speed: 4
   _jumpHeight: 2
   _gravity: 2
 --- !u!114 &3242267428933102429
@@ -197,6 +197,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _canvas: {fileID: 5963645012508096296}
+  _step1: {fileID: 0}
+  _step2: {fileID: 0}
+  _step: []
 --- !u!81 &3242267428559610843
 AudioListener:
   m_ObjectHideFlags: 0
