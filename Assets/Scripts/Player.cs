@@ -4,8 +4,8 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     [SerializeField] private GameObject _canvas;
-    [SerializeField] private AudioClip _step1;
-    [SerializeField] private AudioClip _step2;
+    //[SerializeField] private AudioClip _step1;
+    //[SerializeField] private AudioClip _step2;
     [SerializeField] private AudioClip[] _step;
     private AudioSource _audioSource;
 
