@@ -32,14 +32,20 @@ public class GameEnding : MonoBehaviour
         _canvas.SetActive(true);
         _player.GetComponent<PlayerMove>().enabled = false;
         _player.GetComponent<Animator>().SetBool("walk", false);
-        Invoke("ReloadScene", 2);
-        
+        Cursor.lockState = CursorLockMode.Confined;
+
     }
 
-    private void ReloadScene ()
+    public void ReloadScene ()
     {
         //Метод для перезагрузки текущей сцены
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 0);
-        CancelInvoke();
+        
     }
+
+    public void ExitGame ()
+    {
+        Application.Quit();
+    }
+
 }

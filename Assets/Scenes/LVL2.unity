@@ -8,8 +8,9 @@ OcclusionCullingSettings:
     smallestOccluder: 5
     smallestHole: 0.25
     backfaceThreshold: 100
-  m_SceneGUID: 00000000000000000000000000000000
-  m_OcclusionCullingData: {fileID: 0}
+  m_SceneGUID: f91edfc58565ccc44a0f92efd9f354c4
+  m_OcclusionCullingData: {fileID: 36300000, guid: 057b6c9542dc8404abf65172b6011366,
+    type: 2}
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
@@ -528,6 +529,46 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242267428040067802, guid: dda8cee20de5c40469164408f2805786,
+        type: 3}
+      propertyPath: far clip plane
+      value: 36.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242267428040067802, guid: dda8cee20de5c40469164408f2805786,
+        type: 3}
+      propertyPath: m_RenderingPath
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242267428040067802, guid: dda8cee20de5c40469164408f2805786,
+        type: 3}
+      propertyPath: near clip plane
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242267428040067805, guid: dda8cee20de5c40469164408f2805786,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242267428040067805, guid: dda8cee20de5c40469164408f2805786,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242267428040067805, guid: dda8cee20de5c40469164408f2805786,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9762015
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242267428040067805, guid: dda8cee20de5c40469164408f2805786,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.21686551
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242267428040067805, guid: dda8cee20de5c40469164408f2805786,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 25.05
       objectReference: {fileID: 0}
     - target: {fileID: 3242267428138690910, guid: dda8cee20de5c40469164408f2805786,
         type: 3}
@@ -4775,6 +4816,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3739410783575108356, guid: a9ed417b4f7d4d041ad84de87ffbe965,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3739410783575108360, guid: a9ed417b4f7d4d041ad84de87ffbe965,
         type: 3}
       propertyPath: m_Pivot.x
@@ -4879,6 +4925,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3739410783575108361, guid: a9ed417b4f7d4d041ad84de87ffbe965,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9ed417b4f7d4d041ad84de87ffbe965, type: 3}

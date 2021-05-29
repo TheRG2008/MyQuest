@@ -12,7 +12,8 @@ public class Button : MonoBehaviour
     {
         if (other.tag == "Player" && Input.GetKey(KeyCode.F))
         {
-            PushEvent.Invoke();           
+            PushEvent.Invoke();
+            Destroy(gameObject);
         }
     }
 

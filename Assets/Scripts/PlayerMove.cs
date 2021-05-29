@@ -25,27 +25,21 @@ public class PlayerMove : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         _anim = GetComponent<Animator>();
         _sourse = GetComponent<AudioSource>();
-
+        _anim.SetFloat("Blend", 0f);
     }
     private void Update()
     {
         Walk();
-        if (_xMove != 0 || _zMove < 0)
-        {
-            _anim.SetBool("backwalk", true);
-            
-        }
-        else if (_xMove != 0 || _zMove > 0)
-        {
+
+        if (_xMove != 0 || _zMove != 0)
+        {            
             _anim.SetBool("walk", true);
-            
         }
         else
         {
             _anim.SetBool("walk", false);
-            _anim.SetBool("backwalk", false);
-
         }
+
         MouseLook();        
     }
 
